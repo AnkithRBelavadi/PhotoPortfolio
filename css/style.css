@@ -1,0 +1,95 @@
+*{
+    margin: 0;
+    padding: 0%;
+    box-sizing: border-box;
+    font-family: 'Poppins';
+    text-decoration: none;
+    scroll-behavior: smooth;
+    list-style: none;
+}
+body {
+    background-color: white;
+}
+header {
+    position: fixed;
+    top: 1.5rem; /* Pushed down slightly */
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5rem;
+    
+    color: black;
+    padding: 0.8rem 2rem;
+    border-radius: 5rem;
+    z-index: 10000;
+    overflow: hidden;
+    background: rgba(128, 128, 128,0.1);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    
+    /* Subtle Border: Defines the shape against the black background */
+    border: 1px solid rgba(255, 255, 255);
+}
+
+
+
+.logo{
+    color: black;
+    font-size: 1.3rem;
+    font-weight: 600;
+    text-wrap: nowrap;
+    transition: 0.3s ease-in-out;
+}
+.logo:hover{
+    transform: scale(1.1);
+}
+
+.nav-links{
+    display: flex;
+    gap: 2rem;
+}
+li a{
+    position: relative;
+    color: black;
+    font-weight: 300;
+}
+li a::after {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 2px;
+    bottom: -4px;
+    left: 50%;
+    background-color: black; /* Matches your text color */
+    transition: all 0.3s ease-in-out;
+    transform: translateX(-50%);
+}
+
+li a:hover::after {
+    width: 100%;
+}
+.wallpaper{
+    padding: 0.5rem 1.5rem;
+    border: 2px solid whitesmoke;
+    border-radius: 3rem;
+    font-weight: 500;
+    text-wrap: nowrap;
+    /* color: aqua; */
+    transition: 0.3s ease-in-out;
+    background: black;
+    color: white;
+
+}
+
+.wallpaper:hover {
+    background: white;
+    color: black;
+    border-color: black;
+}
+
+#menu-icon{
+    display: none;
+}
+
