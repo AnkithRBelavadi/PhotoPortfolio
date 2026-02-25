@@ -2,7 +2,7 @@
 const titleObserver = new IntersectionObserver((entries) => {
     entries.forEach(entry => {
         if (entry.isIntersecting) {
-            console.log("VISIBLE:", entry.target);
+            // console.log("VISIBLE:", entry.target);
             const letters = entry.target.querySelectorAll('.letter');
             letters.forEach((letter, index) => {
                 // Delay each letter by 0.05s * its position
@@ -18,11 +18,11 @@ const titleObserver = new IntersectionObserver((entries) => {
 
 // Select all titles
 const titles = document.querySelectorAll('#reveal-title');
-console.log(titles)
+// console.log(titles)
 titles.forEach(title => {
     const text = title.innerText;
     title.innerText = '';
-    console.log(text)
+    // console.log(text)
     text.split('').forEach((char) => {
         const letter = document.createElement('span');
         letter.classList.add('letter');
@@ -108,3 +108,17 @@ const serviceTextObserver = new IntersectionObserver((entries) => {
 
 serviceTexts.forEach(card => serviceTextObserver.observe(card));
 
+
+const observeForm = new IntersectionObserver((entries)=>{
+    // console.log("Hitting")
+    entries.forEach(entry =>{
+        if (entry.isIntersecting){
+            entry.target.classList.add('active-pop');
+        }
+    });
+},{threshold:0.65});
+
+document.querySelectorAll('.raven-form').forEach((card) => {
+    // console.log("Hello")
+    observeForm.observe(card);
+});

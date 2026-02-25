@@ -270,7 +270,8 @@ li a:hover::after {
     display: flex;
     align-items: center;
     justify-content: center;
-    background-color: white; /* Each card needs a solid bg to hide the one behind it */
+    /* background-color: white; Each card needs a solid bg to hide the one behind it */
+    backdrop-filter: blur(50px);
     overflow: hidden;
 }
 .service-content {
@@ -366,6 +367,22 @@ li a:hover::after {
     padding-right: 7rem;
     font-weight: bold;
 /* font-style: italic; */
+transform: translateY(50px) translateX(50px) scale(0.95);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
+    
+    transition: all 1.2s cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+.raven-form.active-pop {
+    opacity: 1;
+    transform: translateY(0) translateX(0) scale(1);
+    
+    /* Deep 3D Shadow + Amber Underglow */
+    /* box-shadow: 10px 12px 0 rgba(0, 0, 0, .5); */
+    box-shadow: 
+        50px 50px 15px rgba(197, 160, 89, .5);
+        /* 0 0 30px rgba(197, 160, 89, 0.15); */
+    border: 1px solid rgba(197, 160, 89, 0.4);
 }
 
 .input-group {
