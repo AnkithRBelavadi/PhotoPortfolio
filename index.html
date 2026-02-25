@@ -22,10 +22,13 @@
                 <a href="#home">Home</a>
             </li>
             <li>
-                <a href="#home">Samples</a>
+                <a href="#samples">My Work</a>
             </li>
             <li>
-                <a href="#home">Contact</a>
+                <a href="#services">Services</a>
+            </li>
+            <li>
+                <a href="#contact">Contact</a>
             </li>
         </ul>
 
@@ -34,29 +37,123 @@
         <button class="wallpaper">Wallpapers</button>
     </header>
 
-    <section id="about" class="about">
-        <div class="about-container">
-            <img src="" alt="">
+    <section id="home" class="home">
+        <div class="home-container">
+        
+            <div class="img-left">
+                <img src="https://picsum.photos/id/45/400/600" alt="Work Sample 1">
+            </div>
+
             <div class="info-box">
                 <div class="text">
-                    <h3>Hi, I'm</h3>
-                    <h1>Ankith</h1>
-                    <span>Your friendly neighbourhood photographer!</span>
+                    <h3 class="fade-in text">Hi, I'm</h3>
+                    <div class="name-wrapper">
+                    <h1 class="slide-up text">Ankith</h1>
+                    </div>
+                    <span class="fade-in text">Your friendly neighbourhood photographer!</span>
                 </div>
 
                 <div class="btn-group">
-                    <div class="btn">Contact Me</div>
-                    <div class="wallpapers">Wallpapers</div>
+                    <button class="wallpaper fade-in">Wallpapers</button>
+                    <button class="wallpaper fade-in">Contact Me</button>
                 </div>
-
-                
             </div>
+
+            <div class="img-right">
+                <img src="https://picsum.photos/id/45/400/600" alt="Work Sample 2">
+            </div>
+
         </div>
     </section>
 
+
+    <section id="samples" class="samples">
+    <h2 id = "reveal-title" class="section-title">My Work</h2>
+    <div class="sample-grid">
+        <div class="sample-card"><img src="https://picsum.photos/id/10/400/500" alt="Sample 1"></div>
+        <div class="sample-card"><img src="https://picsum.photos/id/11/400/500" alt="Sample 2"></div>
+        <div class="sample-card"><img src="https://picsum.photos/id/12/400/500" alt="Sample 3"></div>
+        <div class="sample-card"><img src="https://picsum.photos/id/13/400/500" alt="Sample 4"></div>
+        <div class="sample-card"><img src="https://picsum.photos/id/14/400/500" alt="Sample 5"></div>
+        <div class="sample-card"><img src="https://picsum.photos/id/15/400/500" alt="Sample 6"></div>
+        <div class="sample-card"><img src="https://picsum.photos/id/16/400/500" alt="Sample 7"></div>
+        <div class="sample-card"><img src="https://picsum.photos/id/17/400/500" alt="Sample 8"></div>
+        <div class="sample-card"><img src="https://picsum.photos/id/18/400/500" alt="Sample 9"></div>
+        <div class="sample-card"><img src="https://picsum.photos/id/19/400/500" alt="Sample 10"></div>
+        <div class="sample-card"><img src="https://picsum.photos/id/20/400/500" alt="Sample 11"></div>
+        <div class="sample-card"><img src="https://picsum.photos/id/21/400/500" alt="Sample 12"></div>
+        </div>
+    </section>
+
+
+    <section id="services" class="services-section">
+        <h2 id="reveal-title" class="section-title">Services</h2>
+
+        <div class="service-container">
+            <div class="service-card" style="z-index: 1;">
+                <div class="service-content">
+                    <div class="service-text">
+                        <h1>Photography</h1>
+                        <p>Capturing moments that last a lifetime with high-end gear.</p>
+                    </div>
+                    <div class="service-image">
+                        <img src="https://picsum.photos/id/250/600/800" alt="Camera">
+                    </div>
+                </div>
+            </div>
+
+            <div class="service-card" style="z-index: 2;">
+                <div class="service-content">
+                    <div class="service-text">
+                        <h1>Videography</h1>
+                        <p>Cinematic storytelling for your special events and brands.</p>
+                    </div>
+                    <div class="service-image">
+                        <img src="https://picsum.photos/id/442/600/800" alt="Video Camera">
+                    </div>
+                </div>
+            </div>
+            
+            </div>
+    </section>
+
+    
+
+
+    <section id="contact" class="contact-section">
+    <div class="sigil-container">
+        <h2 class="house-title">Lets Connect</h2>
+        <p class="motto">--- My super power is freezing TIME, What's yours? ---</p>
+    </div>
+
+    <div class="scroll-container">
+        <form class="raven-form">
+            <div class="input-group">
+                <label>Your Name</label>
+                <input type="text" placeholder="Lord / Lady ..." required>
+            </div>
+
+            <div class="input-group">
+                <label>Your Message</label>
+                <textarea rows="4" placeholder="Send word to the Magician..."></textarea>
+            </div>
+
+            <button type="submit" class="send-raven">
+                <span>Send Raven</span>
+                <i class="fa-solid fa-dove"></i>
+            </button>
+        </form>
+    </div>
+
+    <div class="small-council">
+        <a href="#"><i class="fa-brands fa-instagram"></i></a>
+        <a href="#"><i class="fa-brands fa-twitter"></i></a>
+        <a href="#"><i class="fa-solid fa-envelope"></i></a>
+    </div>
+</section>
     
     <!-- <script src="js/animations.js"></script> -->
-    <!-- <script src="js/main.js"></script> -->
-     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="js/main.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
