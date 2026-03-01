@@ -122,3 +122,28 @@ document.querySelectorAll('.raven-form').forEach((card) => {
     // console.log("Hello")
     observeForm.observe(card);
 });
+
+
+// Select the elements
+const menuIcon = document.querySelector('#menu-icon');
+const navLinks = document.querySelector('.nav-links');
+
+// Check if elements exist to avoid errors
+if (menuIcon && navLinks) {
+    menuIcon.addEventListener('click', () => {
+        console.log("Menu clicked!"); // Check your console for this!
+        
+        // Toggle the active class
+        navLinks.classList.toggle('active');
+        
+        // Optional: Toggle the icon between 'bars' and 'X'
+        menuIcon.classList.toggle('fa-xmark');
+    });
+}
+
+// Close menu when a link is clicked
+document.querySelectorAll('.nav-links li a').forEach(link => {
+    link.addEventListener('click', () => {
+        navLinks.classList.remove('active');
+    });
+});
